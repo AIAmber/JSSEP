@@ -1,0 +1,15 @@
+/*下划线样式的标签页*/
+ul.nav-tabs-underline{border: 0px;margin-bottom: 20px;}
+ul.nav-tabs-underline li.active{border-bottom: 3px solid #80C783}
+ul.nav-tabs-underline li a{border: 0px;color: black;font-size: 16px;}
+ul.nav-tabs-underline li a:hover,
+ul.nav-tabs-underline li a:focus{background-color: white;}
+ul.nav-tabs-underline li.active a{border: 0px;background-color: white;}
+ul.nav-tabs-underline li.active a:hover,
+ul.nav-tabs-underline li.active a:focus{border: 0px;background-color: white;}
+
+/*资源分类样式*/
+.resourceclassify-content{position: relative;height: 100%}
+.resourceclassify-tree{width: 240px;position: absolute;top: 0px;left: 0px;height: 100%;border-right: 2px solid #ddd;}
+.resourceclassify-table{margin-left: 240px;padding-left: 30px;}=======
+ul.nav-tabs-underline li.active a:focus{border: 0px;background-color: white;}

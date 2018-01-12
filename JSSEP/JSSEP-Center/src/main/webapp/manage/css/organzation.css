@@ -1,0 +1,46 @@
+#savebtn{
+  margin-left: 35%;
+}
+.nav-tabs{
+  border-bottom: 0px solid #ddd;
+  
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  border: 0px solid #ddd;
+  border-bottom: 3px solid #C0E3C2;
+}
+.tab-content{
+  
+  padding:3px;
+  padding-top:15px;
+  background-color:#F8F9FA;
+}
+.modal-footer{
+  padding:10px;
+  border-top: 0px solid #e5e5e5;
+}
+.modal-body{
+  padding-bottom: 0px;
+    padding-top: 5px;
+}
+.nodeAdd-dialog .modal-dialog{
+  width:50%;
+  margin-top:10%
+}
+
+.node-dialog .modal-dialog{
+  width:25%;
+  margin-top:20%
+}
+.form-horizontal .form-group{
+  margin-right: 0px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.form-control{
+  height: 30px;
+}
+.modal-dialog{
+  min-width:750px;
+}

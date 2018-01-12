@@ -1,0 +1,181 @@
+/*数据交换系统登陆页样式表*/
+
+/*样式初始化操作*/
+html,body{
+	width: 100%;
+	height: 100%;
+	font-family: "微软雅黑";
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+a { 
+	text-decoration:none; 
+}
+a:hover {
+	text-decoration:underline;
+}
+* {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+input{
+	outline: none;
+}
+
+
+/*登陆页样式开始*/
+.login-container{
+	width: 100%;
+	height: 100%;
+}
+/*头部内容*/
+.head{
+	height: 80px;
+	line-height: 80px;
+	width: 1000px;
+	margin: 0 auto;
+}
+.head img,.head span{
+	display: inline-block;
+	float: left;
+	vertical-align: middle;
+	color: #3671CF;
+	font-size: 30px;
+	font-family: '微软雅黑 Regular', '微软雅黑';
+}
+.head img{
+	width: 36px;
+	height: 36px;
+	margin-top: 22px;
+	margin-right: 15px;
+}
+
+
+/*中间内容*/
+.login-content{
+	width: 100%;
+	margin: 0 auto;
+	height: 584px;
+	background-image: url(../images/login-bg.png);
+	background-repeat:repeat-x;
+/*	-ms-behavior: url(css/backgroundsize.min.htc);
+    behavior: url(css/backgroundsize.min.htc);*/
+}
+.login-content>div{
+	width: 1000px;
+	margin: 0 auto;
+	height: 584px;
+}
+.content-left,.content-right{
+	float: left;
+}
+.content-left>img{
+	margin:92px 48px 0px 5px;
+	height: 400px;
+}
+
+.login-input{
+	background-image: url(../images/login_right.png);
+	width: 341px;
+	height: 340px;
+	background-size: cover;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+    behavior: url(css/backgroundsize.min.htc);
+    margin-top: 117px;
+    overflow: hidden;
+}
+.box-title{
+	color: #3671CF;
+	font-size: 24px;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+.box-input{
+	width: 261px;
+	margin: 0px 40px;
+	position: relative;
+}
+.box-input input{
+	width: 260px;
+	border: 1px solid #ddd;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 40px;
+	color: #666;
+}
+.box-input>img{
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	float: left;
+	margin-top: 26px;
+	margin-left: 5px;
+}
+.box-input .yzm-left{
+	width: 168px;
+}
+.box-input .yzm-right{
+	width: 80px;
+	padding-left: 10px;
+}
+
+.login-button{
+	width: 260px;
+	margin: 0 auto;
+}
+.login-button>input{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	position: relative;
+	z-index: 10;
+	background-color: #3671cf;
+	border: 1px solid #3671cf;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 10px;
+	-ms-behavior: url(css/PIE.htc);
+	behavior: url(css/PIE.htc);
+}
+
+/*底部内容开始*/
+.foot{
+	width: 100%;
+	background: #cfcfcf;
+	height: 104px;
+}
+.foot-content{
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 14px;
+}
+.foot-content p{
+	font-size: 14px;
+	text-align: center;
+	width: 100%;
+	color: #555555;
+	line-height: 25px;
+}

@@ -1,0 +1,124 @@
+{
+	"total" : 100,
+	"rows" : [{
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : true,
+				"shareType" : "不共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : false,
+				"shareType" : "有条件共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : false,
+				"shareType" : "无条件共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : true,
+				"shareType" : "不共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : false,
+				"shareType" : "有条件共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : false,
+				"shareType" : "有条件共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : false,
+				"shareType" : "有条件共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : true,
+				"shareType" : "不共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : false,
+				"shareType" : "无条件共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : true,
+				"shareType" : "无条件共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : false,
+				"shareType" : "有条件共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : true,
+				"shareType" : "不共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : true,
+				"shareType" : "不共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : false,
+				"shareType" : "无条件共享"
+			}, {
+				"id" : "123",
+				"sourceName" : "资源名称ABCD",
+				"sourceCode" : "资源代码ABCD",
+				"sourceProvider" : "资源提供方ABCD",
+				"sourceProviderCode" : "资源提供方代码ABCD",
+				"isStop" : true,
+				"shareType" : "不共享"
+			}]
+}

@@ -1,0 +1,89 @@
+@charset "utf-8";
+body{font-family: "微软雅黑";}
+
+/*左侧导航栏*/
+.down-main{position: absolute;width: 100%;top: 50px;bottom: 0px;}
+.left-full{ width:160px; display:block;}
+.right-full{ left:160px;}
+.left-off{ width:48px; display:block;}
+.right-off{ left:48px;}  
+.right-product{position: absolute;top: 0px;bottom: 0px;right: 0px;background: #FFF;}
+.sidebar-fold{ height: 30px;width: 100%;background: #2d3c59;color: #aeb9c2;text-align: center; height:30px; font-size: 12px;cursor: pointer;}
+.sidebar-fold span{ line-height:30px;}
+.left-main{ bottom: 0px; top:50px; z-index:100; position:fixed; background-color:#3F4457;}
+.sBox ul li{ list-style-type:none; position:relative;}
+
+.sBox ul{ padding:0px; position: relative; margin:0px;}
+.sBox ul li a{display: block;width: 100%;height: 40px;line-height: 40px;overflow: hidden; text-decoration:none; color:#FFF;}
+.sBox ul li a{background: #2b2f3b;}
+.sBox .sublist-icon{ width:48px; text-align:center;color:#babcc4;}
+.subNavBox .subNav{ height:40px; line-height:40px; }
+.subNavBox .subNav .title-icon{ width:48px; text-align:center;color:#babcc4;}
+.sBox .sublist-down{ background-color:#262835;}
+.sBox .sublist-up{ background-color:#3F4457;}
+.sBox .sublist-up ul{ display:none;}
+.sBox .sublist-title{ cursor:pointer; font-size: 14px;color:#babcc4;}
+.sBox .subNav:hover,.sBox ul li:hover{ background-color:#262835;color:#FFFFFF}
+.sBox ul li a:hover{ background-color:#2d3c59;}
+.sBox span{ line-height:36px;}
+.sBox ul li .showtitle{ text-align:center; line-height:40px; position:absolute; z-index:100; background-color:#545f71; left:55px; padding:0px 10px 0px 10px; color:#FFF; min-width:100px; display:none;}
+.sBox ul li .showtitle img {position: absolute;left: -6px; top: 14px;}
+.left-off .sBox ul li .sub-title{ display:none;}
+.left-off .sBox .sublist-title{ display:none;}
+
+
+/***************************************************************/
+
+/*============后台模板==============*/
+.navbar-mystyle{background-color:#09C; color:#FFF;}
+.mystyle-brand{ background-color:#0087b4; display:block;}
+
+/*导航栏样式变更*/
+.navbar-mystyle .navbar-nav li .mystyle-color:hover{ background-color:#0087b4; color:#FFF;}
+.navbar-default .navbar-nav>li>a,.navbar-default .navbar-nav>li>a:focus{color:#FFF;}
+.navbar-default .navbar-brand{color:#FFF;}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{ background-color:#FFF; color:#000;}
+.navbar-default .navbar-brand:hover{color:#FFF;}
+.navbar-default .dropdown-menu{ width:100%; min-width:1px; border:0px; border-top:1px solid #e5e5e5;}
+/*隐藏按钮*/
+.navbar-default .navbar-toggle{ border-color:#FFF;}
+.navbar-default .navbar-toggle .icon-bar{ background-color:#FFF;}
+.topbar-num{font-size: 12px;color: #fff;background: #f90;border-radius: 5px;padding: 2px 5px;
+display: inline-block;line-height: 16px;vertical-align: top;text-align: center;}
+
+.li-border{border-right: 1px solid #008fbf;}
+/*左侧导航选中样式*/
+.sBox ul .active{ background:#2d3c59;color: #FFFFF}
+
+/*搜索*/
+.dropdown .search-dropdown{left:auto; right:0px; padding:0px; width:280px;border: 2px solid #008fbf;}
+.dropdown .search-dropdown .form-control{ border:0px;}
+.dropdown .search-dropdown .btn{ padding:7px 12px; border-radius:0px; border:0px; color:#FFF; background-color:#008fbf;}
+
+/*时间*/
+.time-title .year-month{ padding:10px; background-color:#09C; height:100%; color:#FFF;}
+.time-title .hour-minute{color:#09C; line-height:70px; background-color:#FFF; padding-left:10px; padding-right:10px;}
+
+/*按钮*/
+.btn-mystyle{color: #FFF;background-color: #09C;}
+
+.panel{
+	margin-bottom:0px;
+}
+
+/*右侧内容样式*/
+.panel-nobody{border: 0px;box-shadow none;-webkit-box-shadow:none;}
+.panel-nobody .panel-body{padding: 0px}
+
+.sBox ul .active a{ background:#2d3c59;color:white;}
+.sub-title{
+	color: #babcc4;
+}
+
+.active a .sublist-icon{
+	color:#FFFFFF;
+}
+
+.active a .sub-title{
+	color:#FFFFFF;
+}

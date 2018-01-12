@@ -1,0 +1,159 @@
+{
+  "total":100,
+  "rows":[{
+        "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本一",
+        "textValue":"文件一",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+       },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本二",
+        "textValue":"文件二",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+        },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本三",
+        "textValue":"文件三",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+         },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本四",
+        "textValue":"文件四",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+         },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本五",
+        "textValue":"文件五",
+        "setting":"<a href='#dicChildGrids'>查看子项</a>"
+         },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本六",
+        "textValue":"文件六",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+         },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本七",
+        "textValue":"文件七",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+         },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本八",
+        "textValue":"文件八",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+         },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本九",
+        "textValue":"文件九",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+         },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本十",
+        "textValue":"文件十",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+         },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本十一",
+        "textValue":"文件十一",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+        },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本十二",
+        "textValue":"文件十二",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+         },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本十二",
+        "textValue":"文件十二",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+         },{
+       "id":"555",
+        "num":"2507",
+        "dicCode":"ABCD",
+        "dicName":"xx字典",
+        "dicDiscribe":"这是xx字典",
+        "codeValue":"55",
+        "strValue":"ACD",
+        "fileValue":"文本十二",
+        "textValue":"文件十二",
+        "setting":"<a href='#/dictionarychildren'>查看子项</a>"
+
+       }]
+}
