@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 100%; height:400px"></div>
+    <script src="./js/echarts.all.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+        var base22 = +new Date(2017, 3, 8, 8, 0, 0);
+        var quaMinute22 = 10 * 60 * 1000;
+        var date22 = [];
+        var data22 = [];
+        var myDate22 = new Date(base22);
+        var Minute22 = 60;
+        var nowRe22 = new RegExp("a");
+        var nowRe22 = /\d+:\d+/;
+
+        //        now = [myDate.getHours(), myDate.getMinutes() + 1, myDate.getSeconds()].join(':');
+
+        function addData22(shift) {
+            now22 = myDate22.toTimeString().match(nowRe22);
+            
+            date22.push(now22);
+            data22.push((Math.random()) * 1200 + 300);
+            if (shift) {
+                console.log(data22);
+                date22.shift();
+                data22.shift();
+            }
+            myDate22 = new Date(+new Date(myDate22)+quaMinute22);
+        }
+
+        for (var i22 = 0; i22 < 20; i22++) {
+            addData22();
+        }
+        //        alert(now);
+
+        //        alert(date);
+        option22 = {
+            title: {
+                // text: '今日资源交换量统计',
+                subtext: '查看详情',
+                sublink: 'http://127.0.0.1',
+                x: 'right'
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: date22
+            },
+            yAxis: {
+                type: 'value',
+                axisLabel: {
+                    formatter: '{value} '
+                },
+                axisPointer: {
+                    snap: true
+                }
+            },
+            color: ['#89CA94'],
+            series: [{
+                name: '交换量',
+                type: 'line',
+                smooth: true,
+                symble: 'none',
+                stack: 'a',
+                data: data22,
+                areaStyle: {
+                    normal: {
+                        color: '#B0D7C6'
+                    }
+                }
+            }]
+        };
+        myChart.setOption(option22);
+
+        setTimeout(function() {
+            window.onresize = function() {
+                myChart.resize();
+            }
+        }, 200)
+
+        setInterval(function() {
+            addData22(true);
+            myChart.setOption({
+                xAxis: {
+                    data: date22
+                },
+                series: [{
+                    name: '成交',
+                    data: data22
+                }]
+            });
+        }, 1000)
+
+    </script>
+
+</body>
+
+</html>

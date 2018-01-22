@@ -1,0 +1,10 @@
+#/catalogrelease
+#/exchangeresource
+#/statisticalanalysis
+#/exchangelog
+#/resourceclassify
+#/exchangenode
+window.alert('权限不足！需要管理员权限！')
+window.alert('权限不足！需要管理员权限！')
+window.alert('权限不足！需要管理员权限！')
+window.alert('权限不足！需要管理员权限！')

@@ -164,29 +164,8 @@ var option22 = {
             snap: true
         }
     },
-    visualMap: {
-        show: false,
-        dimension: 0,
-        pieces: [{
-            lte: 6,
-            color: '#97D09A'
-                }, {
-            gt: 6,
-            lte: 8,
-            color: '#97D09A'
-                }, {
-            gt: 8,
-            lte: 14,
-            color: '#97D09A'
-                }, {
-            gt: 14,
-            lte: 17,
-            color: '#97D09A'
-                }, {
-            gt: 17,
-            color: '#97D09A'
-                }]
-    },
+    color: ['#89CA94'],
+    
     series: [{
         name: '交换量',
         type: 'line',
@@ -194,10 +173,7 @@ var option22 = {
         data: [300, 280, 250, 260, 270, 300, 550, 1600, 400, 390, 380, 390, 400, 500, 600, 750, 800, 700, 600, 400],
         areaStyle: {
             normal: {
-                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                    offset: 0,
-                    color: '#BEE1C0'
-                        }])
+                color: '#BEE1C0'
             }
         }
             }]
@@ -205,9 +181,9 @@ var option22 = {
 var option23 = {
     color: ['#5BB0F0'],
     grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
+//        left: '3%',
+//        right: '4%',
+        bottom: '15%',
         containLabel: true
     },
     xAxis: [{
@@ -223,6 +199,7 @@ var option23 = {
     series: [{
         name: '资源请求次数',
         type: 'bar',
+        barCategoryGap: '60%',
         data: [23, 44, 30, 48, 64, 41, 20, 22, 64, 41, 20, 22, 64, 41, 20, 22, 64, 41, 20, 22]
             }]
 };
@@ -340,7 +317,7 @@ var option31 = {
     xAxis: {
         data: dataAxis31,
         axisLabel: {
-            inside: true,
+            inside: false,
             textStyle: {
                 color: '#fff'
             }
@@ -351,7 +328,7 @@ var option31 = {
         axisLine: {
             show: false
         },
-        z: 10
+//        z: 10
     },
     yAxis: {
         axisLine: {
@@ -366,16 +343,15 @@ var option31 = {
             }
         }
     },
-    dataZoom: [{
-        type: 'inside'
-            }],
+    grid: {
+//        left: '3%',
+//        right: '4%',
+        bottom: '15%',
+        containLabel: true
+    },
+    color: ['#EBEFF2', '#81C683'],
     series: [{ // For shadow
             type: 'bar',
-            itemStyle: {
-                normal: {
-                    color: 'rgba(0,0,0,0.05)'
-                }
-            },
             barGap: '-100%',
             barCategoryGap: '40%',
             data: dataShadow31,
@@ -383,42 +359,7 @@ var option31 = {
                 },
         {
             type: 'bar',
-            itemStyle: {
-                normal: {
-                    color: new echarts.graphic.LinearGradient(
-                        0, 0, 0, 1, [{
-                                offset: 0,
-                                color: '#81C683'
-                                    },
-                            {
-                                offset: 0.5,
-                                color: '#81C683'
-                                    },
-                            {
-                                offset: 1,
-                                color: '#81C683'
-                                    }
-                                ]
-                    )
-                },
-                emphasis: {
-                    color: new echarts.graphic.LinearGradient(
-                        0, 0, 0, 1, [{
-                                offset: 0,
-                                color: '#2378f7'
-                                    },
-                            {
-                                offset: 0.7,
-                                color: '#2378f7'
-                                    },
-                            {
-                                offset: 1,
-                                color: '#83bff6'
-                                    }
-                                ]
-                    )
-                }
-            },
+
             data: data31
                 }
             ]

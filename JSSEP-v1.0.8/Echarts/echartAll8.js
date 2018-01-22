@@ -36,11 +36,74 @@ var data31 = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 12
 var yMax31 = 500;
 var dataShadow31 = [];
 
+
+
 for (var i = 0; i < data31.length; i++) {
     dataShadow31.push(yMax31);
 }
 
 var option21 = {
+    color: ['#5BB0F0'],
+    grid: {
+        //        left: '3%',
+        //        right: '4%',
+        bottom: '5%',
+        containLabel: true
+    },
+    xAxis: [{
+        type: 'category',
+        data: ['资源1', '资源2', '资源3', '资源4', '资源5', '资源6', '资源7', '资源8', '资源9', '资源10', '资源11', '资源12', '资源13', '资源14', '资源15', '资源16', '资源17', '资源18', '资源19', '资源20'],
+        axisTick: {
+            alignWithLabel: true
+        }
+            }],
+    yAxis: [{
+        type: 'value'
+            }],
+    series: [{
+        name: '资源请求次数',
+        type: 'bar',
+        barCategoryGap: '60%',
+        data: [23, 44, 30, 48, 64, 41, 20, 22, 64, 41, 20, 22, 64, 41, 20, 22, 64, 41, 20, 22]
+            }]
+};
+
+var option22 = {
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['00:00', '01:15', '02:30', '03:45', '05:00', '06:15', '07:30', '08:45', '10:00', '11:15', '12:30', '13:45', '15:00', '16:15', '17:30', '18:45', '20:00', '21:15', '22:30', '23:45']
+    },
+    yAxis: {
+        type: 'value',
+        axisLabel: {
+            formatter: '{value} '
+        },
+        axisPointer: {
+            snap: true
+        }
+    },
+    color: ['#89CA94'],
+    grid: {
+        //        left: '3%',
+        //        right: '4%',
+        bottom: '5%',
+        containLabel: true
+    },
+    series: [{
+        name: '交换量',
+        type: 'line',
+        smooth: true,
+        data: [300, 280, 250, 260, 270, 300, 550, 1600, 400, 390, 380, 390, 400, 500, 600, 750, 800, 700, 600, 400],
+        areaStyle: {
+            normal: {
+                color: '#BEE1C0'
+            }
+        }
+            }]
+};
+
+var option23 = {
     tooltip: {
         show: true
     },
@@ -147,84 +210,6 @@ var option21 = {
             }
         }
                 }]
-};
-
-var option22 = {
-    xAxis: {
-        type: 'category',
-        boundaryGap: false,
-        data: ['00:00', '01:15', '02:30', '03:45', '05:00', '06:15', '07:30', '08:45', '10:00', '11:15', '12:30', '13:45', '15:00', '16:15', '17:30', '18:45', '20:00', '21:15', '22:30', '23:45']
-    },
-    yAxis: {
-        type: 'value',
-        axisLabel: {
-            formatter: '{value} '
-        },
-        axisPointer: {
-            snap: true
-        }
-    },
-    visualMap: {
-        show: false,
-        dimension: 0,
-        pieces: [{
-            lte: 6,
-            color: '#97D09A'
-                }, {
-            gt: 6,
-            lte: 8,
-            color: '#97D09A'
-                }, {
-            gt: 8,
-            lte: 14,
-            color: '#97D09A'
-                }, {
-            gt: 14,
-            lte: 17,
-            color: '#97D09A'
-                }, {
-            gt: 17,
-            color: '#97D09A'
-                }]
-    },
-    series: [{
-        name: '交换量',
-        type: 'line',
-        smooth: true,
-        data: [300, 280, 250, 260, 270, 300, 550, 1600, 400, 390, 380, 390, 400, 500, 600, 750, 800, 700, 600, 400],
-        areaStyle: {
-            normal: {
-                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                    offset: 0,
-                    color: '#BEE1C0'
-                        }])
-            }
-        }
-            }]
-};
-var option23 = {
-    color: ['#5BB0F0'],
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis: [{
-        type: 'category',
-        data: ['资源1', '资源2', '资源3', '资源4', '资源5', '资源6', '资源7', '资源8', '资源9', '资源10', '资源11', '资源12', '资源13', '资源14', '资源15', '资源16', '资源17', '资源18', '资源19', '资源20'],
-        axisTick: {
-            alignWithLabel: true
-        }
-            }],
-    yAxis: [{
-        type: 'value'
-            }],
-    series: [{
-        name: '资源请求次数',
-        type: 'bar',
-        data: [23, 44, 30, 48, 64, 41, 20, 22, 64, 41, 20, 22, 64, 41, 20, 22, 64, 41, 20, 22]
-            }]
 };
 
 var option24 = {
@@ -337,200 +322,6 @@ var option24 = {
 };
 
 var option31 = {
-    xAxis: {
-        data: dataAxis31,
-        axisLabel: {
-            inside: true,
-            textStyle: {
-                color: '#fff'
-            }
-        },
-        axisTick: {
-            show: false
-        },
-        axisLine: {
-            show: false
-        },
-        z: 10
-    },
-    yAxis: {
-        axisLine: {
-            show: false
-        },
-        axisTick: {
-            show: false
-        },
-        axisLabel: {
-            textStyle: {
-                color: '#999'
-            }
-        }
-    },
-    dataZoom: [{
-        type: 'inside'
-            }],
-    series: [{ // For shadow
-            type: 'bar',
-            itemStyle: {
-                normal: {
-                    color: 'rgba(0,0,0,0.05)'
-                }
-            },
-            barGap: '-100%',
-            barCategoryGap: '40%',
-            data: dataShadow31,
-            animation: false
-                },
-        {
-            type: 'bar',
-            itemStyle: {
-                normal: {
-                    color: new echarts.graphic.LinearGradient(
-                        0, 0, 0, 1, [{
-                                offset: 0,
-                                color: '#81C683'
-                                    },
-                            {
-                                offset: 0.5,
-                                color: '#81C683'
-                                    },
-                            {
-                                offset: 1,
-                                color: '#81C683'
-                                    }
-                                ]
-                    )
-                },
-                emphasis: {
-                    color: new echarts.graphic.LinearGradient(
-                        0, 0, 0, 1, [{
-                                offset: 0,
-                                color: '#2378f7'
-                                    },
-                            {
-                                offset: 0.7,
-                                color: '#2378f7'
-                                    },
-                            {
-                                offset: 1,
-                                color: '#83bff6'
-                                    }
-                                ]
-                    )
-                }
-            },
-            data: data31
-                }
-            ]
-};
-
-var option32 = {
-    tooltip: {
-        show: true,
-        formatter: "{a} <br/>{b} : {c} ({d}%)"
-    },
-    legend: {
-        orient: 'vertical',
-        x: '75%',
-        y: '33%',
-        data: ['JVM内存消耗', '系统内存消耗', '剩余可用内存']
-    },
-    color: ['#5BB0F0', '#EBEFF2', '#81C683'],
-    series: [{
-        name: '内存使用情况',
-        type: 'pie',
-        center: ['21%', '50%'],
-        radius: ['34%', '59%'],
-        avoidLabelOverlap: false,
-        label: {
-            normal: {
-                show: false,
-                position: 'center'
-            },
-            emphasis: {
-                show: false,
-                textStyle: {
-                    fontSize: '20',
-                    fontWeight: 'bold'
-                }
-            }
-        },
-        labelLine: {
-            normal: {
-                show: false
-            }
-        },
-        data: [{
-                value: 335,
-                name: 'JVM内存消耗',
-                label: {
-                    normal: {
-                        formatter: '{d}%',
-                        position: 'center',
-                        show: true,
-                        textStyle: {
-                            fontSize: '20',
-                            fontWeight: 'normal',
-                            color: '#5BB0F0'
-                        }
-                    }
-                }
-                },
-            {
-                value: 689,
-                name: '剩余可用内存'
-                }
-            ]
-        }, {
-        name: '内存使用情况',
-        type: 'pie',
-        center: ['59%', '50%'],
-        radius: ['34%', '59%'],
-        avoidLabelOverlap: false,
-        label: {
-            normal: {
-                show: false,
-                position: 'center'
-            },
-            emphasis: {
-                show: false,
-                textStyle: {
-                    fontSize: '20',
-                    fontWeight: 'bold'
-                }
-            }
-        },
-        labelLine: {
-            normal: {
-                show: false
-            }
-        },
-        data: [{
-                value: 699,
-                name: '系统内存消耗',
-                label: {
-                    normal: {
-                        formatter: '{d}%',
-                        position: 'center',
-                        show: true,
-                        textStyle: {
-                            fontSize: '20',
-                            fontWeight: 'normal',
-                            color: '#81C683'
-                        }
-                    }
-                }
-                },
-            {
-                value: 325,
-                name: '剩余可用内存'
-                }
-            ]
-        }]
-};
-
-
-var option41 = {
     tooltip: {
         show: true,
         formatter: "{a} <br/>{b} : {c} ({d}%)"
@@ -599,7 +390,7 @@ var option41 = {
             }, {
             name: 'CPU',
             type: 'pie',
-            radius: ['75%', '76%'],
+            radius: [85, 86],
             center: ['50%', '50%'],
             data: [{
                     value: 100,
@@ -627,7 +418,7 @@ var option41 = {
             }, {
             name: 'C',
             type: 'pie',
-            radius: ['21%', '22%'],
+            radius: [26, 27],
             center: ['50%', '50%'],
             data: [{
                     value: 100,
@@ -654,6 +445,163 @@ var option41 = {
             }
             }
         ]
+};
+
+var option32 = {
+    tooltip: {
+        show: true,
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: '75%',
+        y: '33%',
+        data: ['JVM内存消耗', '系统内存消耗', '剩余可用内存']
+    },
+    color: ['#5BB0F0', '#EBEFF2', '#81C683'],
+    series: [{
+        name: '内存使用情况',
+        type: 'pie',
+        center: ['21%', '50%'],
+        radius: [36, 61],
+        avoidLabelOverlap: false,
+        label: {
+            normal: {
+                show: false,
+                position: 'center'
+            },
+            emphasis: {
+                show: false,
+                textStyle: {
+                    fontSize: '20',
+                    fontWeight: 'bold'
+                }
+            }
+        },
+        labelLine: {
+            normal: {
+                show: false
+            }
+        },
+        data: [{
+                value: 335,
+                name: 'JVM内存消耗',
+                label: {
+                    normal: {
+                        formatter: '{d}%',
+                        position: 'center',
+                        show: true,
+                        textStyle: {
+                            fontSize: '20',
+                            fontWeight: 'normal',
+                            color: '#5BB0F0'
+                        }
+                    }
+                }
+                },
+            {
+                value: 689,
+                name: '剩余可用内存'
+                }
+            ]
+        }, {
+        name: '内存使用情况',
+        type: 'pie',
+        center: ['59%', '50%'],
+        radius: [36, 61],
+        avoidLabelOverlap: false,
+        label: {
+            normal: {
+                show: false,
+                position: 'center'
+            },
+            emphasis: {
+                show: false,
+                textStyle: {
+                    fontSize: '20',
+                    fontWeight: 'bold'
+                }
+            }
+        },
+        labelLine: {
+            normal: {
+                show: false
+            }
+        },
+        data: [{
+                value: 699,
+                name: '系统内存消耗',
+                label: {
+                    normal: {
+                        formatter: '{d}%',
+                        position: 'center',
+                        show: true,
+                        textStyle: {
+                            fontSize: '20',
+                            fontWeight: 'normal',
+                            color: '#81C683'
+                        }
+                    }
+                }
+                },
+            {
+                value: 325,
+                name: '剩余可用内存'
+                }
+            ]
+        }]
+};
+
+var option41 = {
+    xAxis: {
+        data: dataAxis31,
+        axisLabel: {
+            inside: false,
+            textStyle: {
+                color: '#fff'
+            }
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false
+        },
+        //        z: 10
+    },
+    yAxis: {
+        axisLine: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+        }
+    },
+    grid: {
+        //        left: '3%',
+        //        right: '4%',
+        bottom: '5%',
+        containLabel: true
+    },
+    color: ['#EBEFF2', '#81C683'],
+    series: [{ // For shadow
+            type: 'bar',
+            barGap: '-100%',
+            barCategoryGap: '40%',
+            data: dataShadow31,
+            animation: false
+                },
+        {
+            type: 'bar',
+
+            data: data31
+                }
+            ]
 };
 
 myChart21.setOption(option21);

@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="./css/buttonCircle.css" type="text/css" />
     <!--    <style src="./css/buttonCircle.css"></style>-->
     <!--    <script src="./js/director.min.js"></script>-->
+    <!--[if lt IE 9]>
+            <script>alert('111');</script>
+     		<script src="./js/html5shiv.min.js"></script>
+     		<script src="./js/respond.min.js"></script>
+   	<![endif]-->
 </head>
 
 <body>
@@ -25,12 +30,15 @@
             <!-- 第1排 -->
             <div class="col-md-6">
                 <div class="panel panel-default" style="border-radius: 2px;">
+                    <div class="panel-heading" style="height: 45px;">
+                        <span style="font-size:18px; float: left; width: 24px; height: 45px; color: #5f5f5f;"><i class="glyphicon glyphicon-open"></i></span>
+                        <span style="font-size:18px; float: left; width: 180px; height: 45px;">最新发布目录内容</span>
+                        <!--<span style="font-size:12px; color: #FFB749; float: left; width: 120px; line-height: 30px;">新发布 121 条信息</span>-->
+                        <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile1.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc"></i></button></span>
+                    </div>
                     <!-- 第1排第1个 -->
                     <div class="panel-body">
-                        <div id="main11" style="height:250px;">
-                            <span style="font-size:18px; float: left; width: 204px; height: 40px;"><i class="glyphicon glyphicon-open"></i> 最新发布目录内容</span>
-                            <!--<span style="font-size:12px; color: #FFB749; float: left; width: 120px; line-height: 30px;">新发布 121 条信息</span>-->
-                            <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile1.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc"></i></button></span>
+                        <div id="main11" style="height:205px;">
                             <table class="table table-condensed table-hover">
                                 <thead>
                                     <tr>
@@ -79,12 +87,15 @@
             </div>
             <div class="col-md-6">
                 <div class="panel panel-default" style="border-radius: 2px;">
+                    <div class="panel-heading" style="height: 45px;">
+                        <span style="font-size:18px; float: left; width: 24px; height: 45px; color: #5f5f5f;"><i class="glyphicon glyphicon-list-alt"></i></span>
+                        <span style="font-size:18px; float: left; width: 180px;  height: 45px;">最新发布内容统计</span>
+                        <!--<span style="font-size:12px; color: #FFB749; float: left; width: 120px; line-height: 30px;">新发布 376 条信息</span>-->
+                        <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile2.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc"></i></button></span>
+                    </div>
                     <!-- 第1排第2个 -->
                     <div class="panel-body">
-                        <div id="main12" style="height:250px;">
-                            <span style="font-size:18px; float: left; width: 204px;  height: 40px;"><i class="glyphicon glyphicon-list-alt"></i> 最新发布内容统计</span>
-                            <!--<span style="font-size:12px; color: #FFB749; float: left; width: 120px; line-height: 30px;">新发布 376 条信息</span>-->
-                            <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile2.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc"></i></button></span>
+                        <div id="main12" style="height:205px;">
                             <table class="table table-condensed table-hover">
                                 <thead>
                                     <tr>
@@ -131,52 +142,56 @@
             <!-- 第2排 -->
             <div class="col-md-6">
                 <div class="panel panel-default" style="border-radius: 2px;">
+                    <div class="panel-heading" style="height: 45px;">
+                            <span style="font-size:18px; float: left; width: 24px; height: 45px; color: #5f5f5f;"><i class="glyphicon glyphicon-leaf"></i></span>
+                            <span style="font-size:18px; float: left; width: 180px; line-height: 20px;">访问资源次数统计</span>
+                            <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile21.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc"></i></button></span>
+                    </div>
                     <!-- 第2排第1个 -->
                     <div class="panel-body">
-                        <div style="height: 15px">
-                            <span style="font-size:18px; float: left; width: 204px; line-height: 20px;"><i class="glyphicon glyphicon-leaf"></i> 访问资源次数统计</span>
-                            <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile21.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc"></i></button></span>
-                        </div>
-                        <div id="main23" style="height:235px"></div>
+                        <div id="main23" style="height:205px"></div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="panel panel-default" style="border-radius: 2px;">
+                    <div class="panel-heading" style="height: 45px;">
+                            <span style="font-size:18px; float: left; width: 24px; height: 45px; color: #5f5f5f;"><i class="glyphicon glyphicon-sort"></i></span>
+                            <span style="font-size:18px; float: left; width: 180px; line-height: 20px;">今日资源交换量统计</span>
+                            <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile22.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc"></i></button></span>
+                    </div>
                     <!-- 第2排第2个 -->
                     <div class="panel-body">
-                        <div style="height: 15px">
-                            <span style="font-size:18px; float: left; width: 204px; line-height: 20px;"><i class="glyphicon glyphicon-sort"></i> 今日资源交换量统计</span>
-                            <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile22.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc"></i></button></span>
-                        </div>
-                        <div id="main22" style="height:235px"></div>
+                        <div id="main22" style="height:205px"></div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="panel panel-default" style="border-radius: 2px;">
+                    <div class="panel-heading" style="height: 45px;">
+                        <span style="font-size:18px; float: left; width: 24px; height: 45px; color: #5f5f5f;"><i class="glyphicon glyphicon-object-align-bottom"></i></span>
+                        <span style="font-size:18px; float: left; width: 180px; line-height: 20px;">最新发布内容统计</span>
+                        <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile22.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc"></i></button></span>
+                    </div>
                     <!-- 第2排第3个 -->
                     <div class="panel-body">
-                        <div style="height: 15px">
-                            <span style="font-size:18px; float: left; width: 204px; line-height: 20px;"><i class="glyphicon glyphicon-object-align-bottom"></i> 最新发布内容统计</span>
-                            <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile22.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc"></i></button></span>
-                        </div>
-                        <div id="main21" style="height:235px"></div>
+                        <div id="main21" style="height:205px"></div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="panel panel-default" style="border-radius: 2px;">
+                    <div class="panel-heading" style="height: 45px;">
+                        <span style="font-size:18px; float: left; width: 24px; height: 45px; color: #5f5f5f;"><i class="glyphicon glyphicon-indent-left"></i></span>
+                        <span style="font-size:18px; float: left; width: 180px; line-height: 20px;">请求类型分析</span>
+                        <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile22.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" ></i></button></span>
+                    </div>
                     <!-- 第2排第4个 -->
                     <div class="panel-body">
-                        <div style="height: 15px">
-                            <span style="font-size:18px; float: left; width: 204px; line-height: 20px;"><i class="glyphicon glyphicon-indent-left"></i> 请求类型分析</span>
-                            <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile22.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" ></i></button></span>
-                        </div>
-                        <div id="main24" style="height:235px"></div>
+                        <div id="main24" style="height:205px"></div>
                     </div>
                 </div>
             </div>
@@ -194,13 +209,14 @@
             <div class="col-md-6">
                 <div class="panel panel-default" style="border-radius: 2px;">
                     <!--<div class="panel-heading clearfix">节点监控</div>-->
+                    <div class="panel-heading" style="height: 45px;">
+                        <span style="font-size:18px; float: left; width: 24px; height: 45px; color: #5f5f5f;"><i class="glyphicon glyphicon-dashboard"></i></span>
+                        <span style="font-size:18px; float: left; width: 180px; line-height: 20px;">CPU使用率</span>
+                        <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile3.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc;"></i></button></span>
+                    </div>
                     <!-- 第3排第1个 -->
                     <div class="panel-body">
-                        <div style="height: 15px">
-                            <span style="font-size:18px; float: left; width: 204px; line-height: 20px;"><i class="glyphicon glyphicon-equalizer"></i> 中心各节点运行情况</span>
-                            <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile3.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc;"></i></button></span>
-                        </div>
-                        <div id="main31" style="height:235px"></div>
+                        <div id="main41" style="height:205px"></div>
                     </div>
                 </div>
             </div>
@@ -208,13 +224,14 @@
             <div class="col-md-6">
                 <div class="panel panel-default" style="border-radius: 2px;">
                     <!--<div class="panel-heading clearfix">内存信息</div>-->
+                    <div class="panel-heading" style="height: 45px;">
+                        <span style="font-size:18px; float: left; width: 24px; height: 45px; color: #5f5f5f;"><i class="glyphicon glyphicon-fire"></i></span>
+                        <span style="font-size:18px; float: left; width: 180px; line-height: 20px;">内存使用情况</span>
+                        <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile3.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc;"></i></button></span>
+                    </div>
                     <!-- 第3排第2个 -->
                     <div class="panel-body">
-                        <div style="height: 15px">
-                            <span style="font-size:18px; float: left; width: 204px; line-height: 20px;"><i class="glyphicon glyphicon-fire"></i> 内存使用情况</span>
-                            <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile3.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc;"></i></button></span>
-                        </div>
-                        <div id="main32" style="height:235px"></div>
+                        <div id="main32" style="height:205px"></div>
                     </div>
                 </div>
             </div>
@@ -225,13 +242,14 @@
             <div class="col-md-6">
                 <div class="panel panel-default" style="border-radius: 2px;">
                     <!-- 第4排第1个 -->
+                    <div class="panel-heading" style="height: 45px;">
+                        <span style="font-size:18px; float: left; width: 24px; height: 45px; color: #5f5f5f;"><i class="glyphicon glyphicon-equalizer"></i></span>
+                        <span style="font-size:18px; float: left; width: 180px; line-height: 20px;">中心各节点运行情况</span>
+                        <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile3.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc;"></i></button></span>
+                    </div>
                     <!--<div class="panel-heading clearfix">CPU信息</div>-->
                     <div class="panel-body">
-                        <div style="height: 15px">
-                            <span style="font-size:18px; float: left; width: 204px; line-height: 20px;"><i class="glyphicon glyphicon-dashboard"></i> CPU使用率</span>
-                            <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile3.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc;"></i></button></span>
-                        </div>
-                        <div id="main41" style="height:235px"></div>
+                        <div id="main31" style="height:205px"></div>
                     </div>
                 </div>
             </div>
@@ -239,11 +257,14 @@
             <div class="col-md-6">
                 <div class="panel panel-default" style="border-radius: 2px;">
                     <!--<div class="panel-heading clearfix">服务器</div>-->
+                    <div class="panel-heading" style="height: 45px;">
+                        <span style="font-size:18px; float: left; width: 24px; height: 45px; color: #5f5f5f;"><i class="glyphicon glyphicon-tasks"></i></span>
+                        <span style="font-size:18px; float: left; width: 180px; height: 45px;">服务器信息</span>
+                        <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile3.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc;"></i></button></span>
+                    </div>
                     <!-- 第4排第2个 -->
                     <div class="panel-body">
-                        <div id="main42" style="height:250px;">
-                            <span style="font-size:18px; float: left; width: 192px; height: 40px;"><i class="glyphicon glyphicon-tasks"></i> 服务器信息</span>
-                            <span style="font-size: 14px; float: right;"><button onclick="javascript:window.location.href='./btnTmpFile3.html';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc;"></i></button></span>
+                        <div id="main42" style="height:205px;">
                             <table class="table table-condensed table-hover">
                                 <thead>
                                     <tr>
@@ -295,8 +316,8 @@
     </div>
 
 
-    <script src="./js/echarts.min.js"></script>
-    <script type="text/javascript" src="./Echarts/echartAll5.js"></script>
+    <script src="./js/echarts.mine.js"></script>
+    <script type="text/javascript" src="./Echarts/echartAll7.js"></script>
     <!--
     <script type="text/javascript" src="./Echarts/echart21.js"></script>
     <script type="text/javascript" src="./Echarts/echart22.js"></script>

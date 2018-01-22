@@ -50,7 +50,7 @@ var option21 = {
         y: 'center',
         data: ['资源1', '资源2', '资源3', '资源4', '资源5']
     },
-    color: ['#4DB7AD', '#C3B5E1', '#5BB0F0', '#FFB880', '#D97A80'],
+    color: ['#9AD6D1', '#C3B5E1', '#86C4F3', '#FECDA1', '#E3A0A5'],
     series: [{
         name: '访问数量',
         type: 'pie',
@@ -78,75 +78,13 @@ var option21 = {
                 }
             ],
         itemStyle: {
-            normal: {
-                label: {
-                    show: false
-                },
-                labelLine: {
-                    show: false
-                }
-            },
             emphasis: {
                 shadowBlur: 10,
                 shadowOffsetX: 0,
-                shadowColor: 'rgba(0, 0, 0, 0.5)',
-                label: {
-                    show: false
-                },
-                labelLine: {
-                    show: false
-                }
+                shadowColor: 'rgba(0, 0, 0, 0.5)'
             }
         }
-        }, {
-        name: '访问数量',
-        type: 'pie',
-        radius: ['70%', '71%'],
-        center: ['50%', '50%'],
-        data: [335, 310, 234, 135, 1548],
-        itemStyle: {
-            normal: {
-                label: {
-                    show: false
-                },
-                labelLine: {
-                    show: false
-                }
-            },
-            emphasis: {
-                label: {
-                    show: false
-                },
-                labelLine: {
-                    show: false
-                }
-            }
-        }
-                }, {
-        name: '访问数量',
-        type: 'pie',
-        radius: ['31%', '32%'],
-        center: ['50%', '50%'],
-        data: [335, 310, 234, 135, 1548],
-        itemStyle: {
-            normal: {
-                label: {
-                    show: false
-                },
-                labelLine: {
-                    show: false
-                }
-            },
-            emphasis: {
-                label: {
-                    show: false
-                },
-                labelLine: {
-                    show: false
-                }
-            }
-        }
-                }]
+        }]
 };
 
 var option22 = {
@@ -196,14 +134,14 @@ var option22 = {
             normal: {
                 color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                     offset: 0,
-                    color: '#BEE1C0'
+                    color: '#D4EBD4'
                         }])
             }
         }
             }]
 };
 var option23 = {
-    color: ['#5BB0F0'],
+    color: ['#C4E3FA'],
     grid: {
         left: '3%',
         right: '4%',
@@ -212,7 +150,7 @@ var option23 = {
     },
     xAxis: [{
         type: 'category',
-        data: ['资源1', '资源2', '资源3', '资源4', '资源5', '资源6', '资源7', '资源8', '资源9', '资源10', '资源11', '资源12', '资源13', '资源14', '资源15', '资源16', '资源17', '资源18', '资源19', '资源20'],
+        data: ['资源1', '资源2', '资源3', '资源4', '资源5', '资源6', '资源7', '资源8'],
         axisTick: {
             alignWithLabel: true
         }
@@ -223,13 +161,15 @@ var option23 = {
     series: [{
         name: '资源请求次数',
         type: 'bar',
-        data: [23, 44, 30, 48, 64, 41, 20, 22, 64, 41, 20, 22, 64, 41, 20, 22, 64, 41, 20, 22]
+        data: [23, 44, 30, 48, 64, 41, 20, 22]
             }]
 };
 
 var option24 = {
-    tooltip: {
-        show: true
+    visualMap: {
+        show: false,
+        min: 80,
+        max: 600,
     },
     legend: {
         orient: 'vertical',
@@ -241,7 +181,7 @@ var option24 = {
     series: [{
         name: '访问来源',
         type: 'pie',
-        radius: ['15%', '62%'],
+        radius: '75%',
         center: ['50%', '50%'],
         data: [{
                 value: 335,
@@ -263,77 +203,29 @@ var option24 = {
                 value: 400,
                 name: '工商'
                     }
-                ],
-        itemStyle: {
+                ].sort(function (a, b) {
+            return a.value - b.value;
+        }),
+        roseType: 'radius',
+        //        color: ['#9AD6D1', '#C3B5E1', '#86C4F3', '#FECDA1', '#E3A0A5'],
+        label: {
             normal: {
-                label: {
-                    show: false
-                },
-                labelLine: {
-                    show: false
-                }
-            },
-            emphasis: {
-                shadowBlur: 10,
-                shadowOffsetX: 0,
-                shadowColor: 'rgba(0, 0, 0, 0.5)',
-                label: {
-                    show: false
-                },
-                labelLine: {
-                    show: false
+                textStyle: {
+                    //                    color: 'rgba(44, 44, 44, 0.3)'
                 }
             }
-        }
-                }, {
-        name: '访问数量',
-        type: 'pie',
-        radius: ['70%', '71%'],
-        center: ['50%', '50%'],
-        data: [335, 310, 274, 235, 400],
-        itemStyle: {
+        },
+        labelLine: {
             normal: {
-                label: {
-                    show: false
+                lineStyle: {
+                    //                    color: 'rgba(44, 44, 44, 0.3)'
                 },
-                labelLine: {
-                    show: false
-                }
-            },
-            emphasis: {
-                label: {
-                    show: false
-                },
-                labelLine: {
-                    show: false
-                }
+                smooth: 0.5,
+                length: 10,
+                length2: 20
             }
         }
-                }, {
-        name: '访问数量',
-        type: 'pie',
-        radius: ['7%', '8%'],
-        center: ['50%', '50%'],
-        data: [335, 310, 274, 235, 400],
-        itemStyle: {
-            normal: {
-                label: {
-                    show: false
-                },
-                labelLine: {
-                    show: false
-                }
-            },
-            emphasis: {
-                label: {
-                    show: false
-                },
-                labelLine: {
-                    show: false
-                }
-            }
-        }
-                }]
+            }]
 };
 
 var option31 = {
@@ -388,15 +280,15 @@ var option31 = {
                     color: new echarts.graphic.LinearGradient(
                         0, 0, 0, 1, [{
                                 offset: 0,
-                                color: '#81C683'
+                                color: '#CDE9CF'
                                     },
                             {
                                 offset: 0.5,
-                                color: '#81C683'
+                                color: '#D4EBD4'
                                     },
                             {
                                 offset: 1,
-                                color: '#81C683'
+                                color: '#97D09A'
                                     }
                                 ]
                     )
@@ -425,19 +317,15 @@ var option31 = {
 };
 
 var option32 = {
-    tooltip: {
-        show: true,
-        formatter: "{a} <br/>{b} : {c} ({d}%)"
-    },
     legend: {
         orient: 'vertical',
         x: '75%',
         y: '33%',
         data: ['JVM内存消耗', '系统内存消耗', '剩余可用内存']
     },
-    color: ['#5BB0F0', '#EBEFF2', '#81C683'],
+    color: ['#9CD0F2', '#EBEFF2', '#B0DCB0'],
     series: [{
-        name: '内存使用情况',
+        name: '访问来源',
         type: 'pie',
         center: ['21%', '50%'],
         radius: ['34%', '59%'],
@@ -448,7 +336,7 @@ var option32 = {
                 position: 'center'
             },
             emphasis: {
-                show: false,
+                show: true,
                 textStyle: {
                     fontSize: '20',
                     fontWeight: 'bold'
@@ -462,19 +350,7 @@ var option32 = {
         },
         data: [{
                 value: 335,
-                name: 'JVM内存消耗',
-                label: {
-                    normal: {
-                        formatter: '{d}%',
-                        position: 'center',
-                        show: true,
-                        textStyle: {
-                            fontSize: '20',
-                            fontWeight: 'normal',
-                            color: '#5BB0F0'
-                        }
-                    }
-                }
+                name: 'JVM内存消耗'
                 },
             {
                 value: 689,
@@ -482,7 +358,7 @@ var option32 = {
                 }
             ]
         }, {
-        name: '内存使用情况',
+        name: '访问来源',
         type: 'pie',
         center: ['59%', '50%'],
         radius: ['34%', '59%'],
@@ -493,7 +369,7 @@ var option32 = {
                 position: 'center'
             },
             emphasis: {
-                show: false,
+                show: true,
                 textStyle: {
                     fontSize: '20',
                     fontWeight: 'bold'
@@ -507,19 +383,7 @@ var option32 = {
         },
         data: [{
                 value: 699,
-                name: '系统内存消耗',
-                label: {
-                    normal: {
-                        formatter: '{d}%',
-                        position: 'center',
-                        show: true,
-                        textStyle: {
-                            fontSize: '20',
-                            fontWeight: 'normal',
-                            color: '#81C683'
-                        }
-                    }
-                }
+                name: '系统内存消耗'
                 },
             {
                 value: 325,
@@ -540,118 +404,59 @@ var option41 = {
         x: 'left',
         y: 'center',
         itemGap: 12,
-        data: ['系统占用', 'JVMAA占用', 'CPU综合负载']
+        data: ['系统内存', 'JVMAA内存', '剩余可用内存']
     },
-    color: ['#81C683', '#EBEFF2', '#D97A80', '#EBEFF2', '#FFC899', '#EBEFF2', '#E8E8E8', '#E8E8E8'],
+    color: ['#B0DCB0', '#EDC4C7', '#FFC899'],
     series: [{
-            name: 'CPU使用率',
+            name: '1',
             type: 'pie',
             clockWise: false,
-            radius: [64, 80],
-            center: ['50%', '50%'],
+            radius: [55, 80],
             itemStyle: dataStyle,
             data: [{
                     value: 68,
-                    name: '系统占用'
+                    name: '系统内存'
                     },
                 {
                     value: 32,
-                    name: '系统闲置',
-                    //                    itemStyle: placeHolderStyle
+                    name: 'invisible',
+                    itemStyle: placeHolderStyle
                     }
                 ]
             },
         {
-            name: 'CPU使用率',
+            name: '2',
             type: 'pie',
             clockWise: false,
-            radius: [48, 64],
-            center: ['50%', '50%'],
+            radius: [35, 55],
             itemStyle: dataStyle,
             data: [{
                     value: 46,
-                    name: 'JVMAA占用'
+                    name: 'JVMAA内存'
                     },
                 {
                     value: 54,
-                    name: 'JVMAA闲置',
-                    //                    itemStyle: placeHolderStyle
+                    name: 'invisible',
+                    itemStyle: placeHolderStyle
                     }
                 ]
             },
         {
-            name: 'CPU使用率',
+            name: '3',
             type: 'pie',
             clockWise: false,
-            radius: [32, 48],
-            center: ['50%', '50%'],
+            radius: [25, 35],
             itemStyle: dataStyle,
             data: [{
                     value: 52,
-                    name: 'CPU综合负载'
+                    name: '剩余可用内存'
                     },
                 {
                     value: 48,
-                    name: 'CPU综合闲置',
-                    //                    itemStyle: placeHolderStyle
+                    name: 'invisible',
+                    itemStyle: placeHolderStyle
                     }
                 ]
-            }, {
-            name: 'CPU',
-            type: 'pie',
-            radius: ['75%', '76%'],
-            center: ['50%', '50%'],
-            data: [{
-                    value: 100,
-                    name: 'CPU'
-                    }
-                ],
-            itemStyle: {
-                normal: {
-                    label: {
-                        show: false
-                    },
-                    labelLine: {
-                        show: false
-                    }
-                },
-                emphasis: {
-                    label: {
-                        show: false
-                    },
-                    labelLine: {
-                        show: false
-                    }
-                }
-            }
-            }, {
-            name: 'C',
-            type: 'pie',
-            radius: ['21%', '22%'],
-            center: ['50%', '50%'],
-            data: [{
-                    value: 100,
-                    name: 'C'
-                    }
-                ],
-            itemStyle: {
-                normal: {
-                    label: {
-                        show: false
-                    },
-                    labelLine: {
-                        show: false
-                    }
-                },
-                emphasis: {
-                    label: {
-                        show: false
-                    },
-                    labelLine: {
-                        show: false
-                    }
-                }
-            }
             }
         ]
 };
