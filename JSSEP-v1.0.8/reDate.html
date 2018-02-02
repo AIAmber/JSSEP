@@ -11,14 +11,38 @@
         var base22 = +new Date(2017, 3, 8, 8, 0, 0);
 
         var myDate22 = new Date(base22);
+        date22 = myDate22.getFullYear()+"."+myDate22.getDate()+"."+myDate22.getDay();
         now22 = myDate22.toTimeString();
+        
+        var timeBase22 = myDate22.getTime();
+        var timeSetBase22 = new Date();
+        timeSetBase22Mod3 = timeSetBase22.setTime(timeBase22-3.6*60*60*1000);
+        var newMyDate22 = new Date(timeSetBase22);
+        newDate22 = newMyDate22.getFullYear()+"."+newMyDate22.getDate()+"."+newMyDate22.getDay();
+        newNow22 = newMyDate22.toTimeString();
+        
         var nowRe22 = new RegExp("a");
 
         var nowRe22 = /\d+:\d+/;
+        
+        var realTimeMod3 = date22+" "+now22.match(nowRe22);
 
         //var re = new RegExp('B','i'); 也可以这样写
+        
+//        alert(date22);
+        
+        alert(now22);
+        alert(newNow22);
 
         alert(now22.match(nowRe22)); // 1
+        alert(realTimeMod3);
+        //        var num1 = (Math.random()+1);
+        //        var num2 = (Math.random()+1);
+        //        var num3 = (Math.random()+1);
+        //        
+        //        alert(num1);
+        //        alert(num2);
+        //        alert(num3);
 
         //        alert(nowRe22);
 
