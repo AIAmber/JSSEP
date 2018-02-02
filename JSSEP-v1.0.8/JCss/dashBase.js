@@ -23,7 +23,7 @@ $('#dash-count-pop').popover({
     content: function () {
         return main21_btn1_content();
     },
-    template: '<div class="popover" role="tooltip" style="background-color: #4DB7B7; z-index: 9999;"><div class="arrow" style="border-bottom-color: #4DB7B7;"></div><h3 class="popover-title" style="background-color: #78C7C1; border-color: #78C7C1; text-align: center; font-weight: bold;"></h3><div class="popover-content"></div></div>'
+    template: '<div class="popover" role="tooltip" style="background-color: #4DB7B7; z-index: 9999; padding: 0px;"><div class="arrow" style="border-bottom-color: #4DB7B7;"></div><h3 class="popover-title" style="background-color: #78C7C1; border-color: #78C7C1; text-align: center; font-weight: bold;"></h3><div class="popover-content"></div></div>'
 });
 
 function main21_btn1_title() {
@@ -45,7 +45,7 @@ $('#dash-realTime-pop').popover({
     content: function () {
         return main22_btn1_content();
     },
-    template: '<div class="popover" role="tooltip" style="background-color: #D97A80; z-index: 9999;"><div class="arrow" style="border-bottom-color: #D97A80;"></div><h3 class="popover-title" style="background-color: #E3A0A5; border-color: #E3A0A5; text-align: center; font-weight: bold;"></h3><div class="popover-content"></div></div>'
+    template: '<div class="popover" role="tooltip" style="background-color: #D97A80; z-index: 9999; padding: 0px;"><div class="arrow" style="border-bottom-color: #D97A80;"></div><h3 class="popover-title" style="background-color: #E3A0A5; border-color: #E3A0A5; text-align: center; font-weight: bold;"></h3><div class="popover-content"></div></div>'
 });
 
 function main22_btn1_title() {
@@ -67,7 +67,7 @@ $('#dash-count-detail').popover({
     content: function () {
         return main21_btn22_content();
     },
-    template: '<div class="popover" role="tooltip" style="z-index: 9999;"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+    template: '<div class="popover" role="tooltip" style="z-index: 9999; padding: 0px;"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
 });
 
 function main21_btn22_title() {
@@ -95,7 +95,7 @@ $('#dash-realTime-detail').popover({
     content: function () {
         return main22_btn22_content();
     },
-    template: '<div class="popover" role="tooltip" style="z-index: 9999;"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+    template: '<div class="popover" role="tooltip" style="z-index: 9999; padding: 0px;"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
 });
 
 function main22_btn22_title() {
