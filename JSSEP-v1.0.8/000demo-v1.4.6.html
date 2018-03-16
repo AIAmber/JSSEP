@@ -181,10 +181,12 @@
                 <div class="panel panel-default" style="border-radius: 2px; border-color: white; box-shadow: none;">
                     <div class="panel-heading" style="height: 36px; background-color: #f5f5f4; border-color: #f5f5f4;">
                         <span style="font-size:16px; float: left; width: 24px; height: 36px; color: #5f5f5f; display: block; margin-top: -2px"><i class="glyphicon glyphicon-object-align-bottom"></i></span>
-                        <span style="font-size:16px; float: left; width: 135px; line-height: 16px;">热点资源统计</span>
+                        <span style="font-size:16px; float: left; width: 135px; line-height: 16px;">部门资源分析</span>
                         <span style="font-size: 14px; float: right; display: block; margin-top: -4px"><button onclick="javascript:window.location.href='#/resourceclassify';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc"></i></button></span>
-                        <div style="position: relative; width: 146px; margin-top: -3px; float: right;">
-                            <button id="dash-realTime-top5" type="button" class="btn btn-xs dash-button-clk" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 100px">排名</button>
+                        <div style="position: relative; width: 146px; margin-top: -3px; padding: 0px 8px; float: right;">
+                            <button id="dash-reqPub-req" type="button" class="btn btn-xs dash-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">请求</button>
+                            <button id="dash-reqPub-pub" type="button" class="btn btn-xs dash-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">发布</button>
+                            <button id="dash-realTime-top5" type="button" class="btn btn-xs dash-button-clk" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">排名</button>
                             <ul class="dropdown-menu">
                                 <li><a id="dash-publish-top3" style="color: #333">今日发布 TOP 3</a></li>
                                 <li><a id="dash-publish-top5" style="color: #333">今日发布 TOP 5</a></li>
@@ -203,10 +205,12 @@
                 <div class="panel panel-default" style="border-radius: 2px; border-color: white; box-shadow: none;">
                     <div class="panel-heading" style="height: 36px; background-color: #f5f5f4; border-color: #f5f5f4;">
                         <span style="font-size:16px; float: left; width: 24px; height: 36px; color: #5f5f5f; display: block; margin-top: -2px"><i class="glyphicon glyphicon-indent-left"></i></span>
-                        <span style="font-size:16px; float: left; width: 135px; line-height: 16px;">请求来源占比</span>
+                        <span style="font-size:16px; float: left; width: 135px; line-height: 16px;">部门行为分析</span>
                         <span style="font-size: 14px; float: right; display: block; margin-top: -4px"><button onclick="javascript:window.location.href='#/exchangenode';" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc"></i></button></span>
-                        <div style="position: relative; width: 146px; margin-top: -3px; float: right;">
-                            <button id="dash-realTime-top5" type="button" class="btn btn-xs dash-button-clk" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 100px">排名</button>
+                        <div style="position: relative; width: 146px; margin-top: -3px; padding: 0px 8px; float: right;">
+                            <button id="dash-reqPub-req" type="button" class="btn btn-xs dash-button">请求</button>
+                            <button id="dash-reqPub-pub" type="button" class="btn btn-xs dash-button">发布</button>
+                            <button id="dash-reqPub-rank" type="button" class="btn btn-xs dash-button-clk" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">排名</button>
                             <ul class="dropdown-menu">
                                 <li><a id="dash-request-top3" style="color: #333">请求来源 TOP 3</a></li>
                                 <li><a id="dash-request-top5" style="color: #333">请求来源 TOP 5</a></li>
@@ -242,6 +246,21 @@
                     <!-- 第3排第2个 -->
                     <div class="panel-body">
                         <div id="main32" style="height:214px"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel panel-default" style="border-radius: 2px; border-color: white; box-shadow: none;">
+                    <!--<div class="panel-heading clearfix">内存信息</div>-->
+                    <div class="panel-heading" style="height: 36px; background-color: #f5f5f4; border-color: #f5f5f4;">
+                        <span style="font-size:16px; float: left; width: 24px; height: 36px; color: #5f5f5f; display: block; margin-top: -2px"><i class="glyphicon glyphicon-fire"></i></span>
+                        <span style="font-size:16px; float: left; width: 135px; line-height: 16px;">CPU使用率</span>
+                        <span style="font-size: 14px; float: right; display: block; margin-top: -4px"><button id="dash-btn-click-41" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc;"></i></button></span>
+                    </div>
+                    <!-- 第3排第2个 -->
+                    <div class="panel-body">
+                        <div id="mainAddCPU" style="height:214px"></div>
                     </div>
                 </div>
             </div>
@@ -305,6 +324,23 @@
             </div>
         </div>
         <!--第四排结束-->
+
+        <!--add server INFO-->
+        <div class="row-fluid">
+            <div class="col-md-12">
+                <div class="panel panel-default" style="border-radius: 2px; border-color: white; box-shadow: none;">
+                    <div class="panel-heading" style="height: 36px; background-color: #f5f5f4; border-color: #f5f5f4;">
+                        <span style="font-size:16px; float: left; width: 24px; height: 36px; color: #5f5f5f; display: block; margin-top: -1px"><i class="glyphicon glyphicon-tasks"></i></span>
+                        <span style="font-size:16px; float: left; width: 135px; line-height: 16px;">服务器信息</span>
+                        <span style="font-size: 14px; float: right; display: block; margin-top: -4px"><button id="dash-btn-click-42" type="button" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-option-horizontal" style="color: #ccc;"></i></button></span>
+                    </div>
+                    <div class="panel-body">
+                        <div id="main42" style="height:214px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="./js/echarts.mine.js"></script>

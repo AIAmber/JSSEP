@@ -1,0 +1,84 @@
+{
+	"total" : 100,
+	"rows" : [{
+				"id" : "1",
+				"sourceName" : "南京市铁路规划数据库",
+				"sourceCode" : "224550121541",
+				"sourceProvider" : "南京市铁路规划局",
+				"sourceProviderCode" : "121212212121",
+				"isStop" : true,
+				"shareType" : "不共享"
+			}, {
+				"id" : "2",
+				"sourceName" : "南京市矿产资源规划数据库",
+				"sourceCode" : "224550121545",
+				"sourceProvider" : "南京市国土资源局",
+				"sourceProviderCode" : "336909074546",
+				"isStop" : false,
+				"shareType" : "有条件共享"
+			}, {
+				"id" : "3",
+				"sourceName" : "南京市铁路规划数据库",
+				"sourceCode" : "224550121541",
+				"sourceProvider" : "南京市铁路规划局",
+				"sourceProviderCode" : "121212212121",
+				"isStop" : false,
+				"shareType" : "无条件共享"
+			}, {
+				"id" : "4",
+				"sourceName" : "南京市矿产资源规划数据库",
+				"sourceCode" : "224550121545",
+				"sourceProvider" : "南京市国土资源局",
+				"sourceProviderCode" : "336909074546",
+				"isStop" : true,
+				"shareType" : "不共享"
+			}, {
+				"id" : "5",
+				"sourceName" : "南京市铁路规划数据库",
+				"sourceCode" : "224550121541",
+				"sourceProvider" : "南京市铁路规划局",
+				"sourceProviderCode" : "121212212121",
+				"isStop" : false,
+				"shareType" : "有条件共享"
+			}, {
+				"id" : "6",
+				"sourceName" : "南京市矿产资源规划数据库",
+				"sourceCode" : "224550121545",
+				"sourceProvider" : "南京市国土资源局",
+				"sourceProviderCode" : "336909074546",
+				"isStop" : false,
+				"shareType" : "有条件共享"
+			}, {
+				"id" : "7",
+				"sourceName" : "南京市铁路规划数据库",
+				"sourceCode" : "224550121541",
+				"sourceProvider" : "南京市铁路规划局",
+				"sourceProviderCode" : "121212212121",
+				"isStop" : false,
+				"shareType" : "有条件共享"
+			}, {
+				"id" : "8",
+				"sourceName" : "南京市矿产资源规划数据库",
+				"sourceCode" : "224550121545",
+				"sourceProvider" : "南京市国土资源局",
+				"sourceProviderCode" : "336909074546",
+				"isStop" : true,
+				"shareType" : "不共享"
+			}, {
+				"id" : "9",
+				"sourceName" : "南京市铁路规划数据库",
+				"sourceCode" : "224550121541",
+				"sourceProvider" : "南京市铁路规划局",
+				"sourceProviderCode" : "121212212121",
+				"isStop" : false,
+				"shareType" : "无条件共享"
+			}, {
+				"id" : "10",
+				"sourceName" : "南京市矿产资源规划数据库",
+				"sourceCode" : "224550121545",
+				"sourceProvider" : "南京市国土资源局",
+				"sourceProviderCode" : "336909074546",
+				"isStop" : true,
+				"shareType" : "无条件共享"
+			}]
+}

@@ -1,0 +1,17 @@
+/*表单*/
+.bridgecnf .control-label{min-width: 120px;font-weight:normal;font-size: 14px;}
+.bridgecnf .hrtitle{font-size: 18px;}
+.bridgecnf .form-group{height:40px; margin-bottom: 26px;}
+.bridgecnf input{border: #d4dee5;}
+.bridgecnf hr{margin-top: 10px}
+.bridgecnf .form-control{background: #f6f9fb;height: 40px;border: #d4dee5 1px solid;box-shadow:none !important;border-radius: 2px !important;}
+.bridgecnf .modal-header{background: #3671cf;}
+.bridgecnf .form-content{margin-left: 80px}
+.bridgecnf .input-btn-bg{padding: 9px 12px}
+
+/*字体请景色*/
+.bridge-success,.bridge-warning,.bridge-danger{font-size:19px}
+.bridge-success{color:#6AC180;}
+.bridge-warning{color:#F4B14E;}
+.bridge-danger{color:#E1615F;}
+

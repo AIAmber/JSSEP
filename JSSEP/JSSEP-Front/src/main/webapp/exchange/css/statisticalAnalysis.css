@@ -1,0 +1,23 @@
+.statisticalChart-right{
+	width:49%;
+	float:right;
+	height:50%;
+	border-color: #f5f5f5;
+}
+
+.statisticalChart-left{
+	width:49%;
+	float:left;
+	height:50%;
+	border-color: #f5f5f5;
+}
+.statisticalChart,.statisticalChart .panel-body,.chartContext{
+	height:100%;
+}
+.chartContext{
+	height:90%;
+}
+.statisticalChart-right .panel-heading,.statisticalChart-left .panel-heading{
+	border-bottom: 0px;
+	background-color: #fbfbfa;
+}

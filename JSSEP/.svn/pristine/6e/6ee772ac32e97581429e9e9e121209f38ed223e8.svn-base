@@ -1,0 +1,40 @@
+.department-dialog .modal-dialog{width:880px;height: 50%;}
+.department-dialog .bootstrap-dialog-footer-buttons{margin-right:8px}
+
+.user-dialog .modal-dialog{width:795px;height: 50%;}
+.organzation-dialog .modal-dialog{width: 500px;height: 280px;}
+.organzation-dialog-tree .modal-dialog{width:400px;height: 451px;}
+.organzation-dialog-tree .modal-body{height:335px;overflow-y: auto;}
+.organzation-dialog-tree .modal-footer{padding-top: 15px}
+.dictionaryDialog .modal-dialog{width:450px;height:50%}
+.dictionaryChildDialog .modal-dialog{width:400px;height:50%}
+.dictionaryChildDialog .modal-body{height:250px; overflow-y:auto}
+ .form-horizontal .form-group{
+  margin-right:3%;
+} 
+.form-group {
+    margin-bottom: 10px;
+}
+/*邮箱格式样式  */
+.emailist{border:1px solid #bdbdbd; border-radius: 4px; background-color:#fff; color:#666; font-size:14px; list-style-type:0; padding:0; margin:0; overflow:hidden;}
+.emailist li{padding:2px 11px; cursor:pointer;}
+.emailist .on, .emailist li:hover{background-color:#eee;}
+/* 权限图标样式 */
+.authority img{
+  width:15px;
+  height:15px;
+  margin-top:-3px;
+  margin-right:5px;
+  color:#437EDB;
+  opacity:0.8;
+}
+/*头像样式  */
+.imgPreview{
+  width:130px; 
+  height:200px;
+  margin-top:15px; 
+}
+.imgPreview img{
+  height:150px;
+  width:130px;
+}

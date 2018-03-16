@@ -1,0 +1,2 @@
+#reservation,select{cursor:pointer;}
+.form-control-feedback{height: 30px;line-height: 30px;}

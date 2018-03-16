@@ -1,0 +1,11 @@
+.modal-header{
+	padding: 10px;
+}
+.modal-footer{
+	padding: 6px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.bootstrap-dialog.type-primary .modal-header{
+	background-color: #3671CF;
+}

@@ -1,0 +1,22 @@
+/*表单*/
+.bridgecnf .control-label{font-weight:normal;font-size: 14px;float: left;}
+.bridgecnf .hrtitle{font-size: 18px;}
+.bridgecnf .hrtitle span{margin-left: 10px;}
+.bridgecnf hr{margin-top: 10px}
+.bridgecnf .num-btn{padding-left: 15px;width: 10px;}
+.bridgecnf .form-bottom{margin-bottom: 30px}
+.bridgecnf .col-sm-1 {width: 14.333333333333332%}
+.bridgecnf .col-sm-offset-1 {margin-left: 14.333333333333332%}
+.bridgecnf .col-sm-4 { width: 33.33333333333333%}
+.bridgecnf .col-sm-9 { width: 80.99999999999999%}
+.form-horizontal .test-connect{top: 7px;right: -8px;cursor: pointer;text-align:center;pointer-events:auto;width: 20px;height: 20px;line-height: 20px;position: absolute;white-space: nowrap;z-index: 10;}
+
+/*数据*/
+.bridge-switch{cursor: pointer;}
+
+/*字体情景色*/
+.bridge-success,.bridge-warning,.bridge-danger{font-size:18px}
+.bridge-success{color:#6AC180;}
+.bridge-warning{color:#F4B14E;}
+.bridge-danger{color:#E1615F;}
+

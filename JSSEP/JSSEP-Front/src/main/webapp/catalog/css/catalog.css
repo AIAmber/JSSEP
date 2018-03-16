@@ -1,0 +1,25 @@
+/*下划线样式的标签页*/
+ul.nav-tabs-underline{border: 0px;margin-bottom: 20px;}
+ul.nav-tabs-underline li.active{border-bottom: 3px solid #3C8DBC}
+ul.nav-tabs-underline li a{border: 0px;color: #666;font-size: 16px;}
+ul.nav-tabs-underline li a:hover,
+ul.nav-tabs-underline li a:focus{background-color: white;color: #666;}
+ul.nav-tabs-underline li.active a,
+ul.nav-tabs-underline li.active a:hover,
+ul.nav-tabs-underline li.active a:focus{border: 0px;background-color: white;color: #222;}
+
+/*目录维护样式*/
+.img-switch{cursor: pointer;}
+
+/*资源分类页面样式*/
+.resourceclassify-content{position: relative;height: 100%;margin-bottom: 0px}
+.resourceclassify-tree{width: 240px;position: absolute;top: 0px;left: 0px;height: 100%;overflow-y: auto;}
+.resourceclassify-table{margin-left: 240px;padding-left: 20px}
+ul.nav-tabs-underline li.active a:focus{border: 0px;background-color: white;}
+.btn-show-select-tree{padding: 4px 12px;}
+
+/*资源分类弹出框样式*/
+.catalog-dialog .modal-dialog{width: 500px;height: 280px;}
+.catalog-dialog-tree .modal-dialog{width:400px;height: 451px;}
+.catalog-dialog-tree .modal-body{height:335px;overflow-y: auto;}
+.catalog-dialog-tree .modal-footer{padding-top: 15px}

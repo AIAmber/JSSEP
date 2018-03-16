@@ -1,0 +1,75 @@
+/*button css*/
+/*clk*/
+.dash-button-clk:focus {
+    color: #fff;
+    background-color: #3671CF !important;
+    border: none;
+    outline: none;
+}
+
+.dash-button-clk:active {
+    color: #fff;
+    background-color: #3671CF !important;
+    border: none;
+    outline: none;
+}
+
+.dash-button-clk:hover {
+    color: #fff;
+    background-color: #3671CF !important;
+    border: none;
+    outline: none;
+}
+
+.dash-button-clk {
+    border-radius: 10px;
+    padding: 0px 8px;
+    line-height: 1.42;
+    color: #fff;
+    background-color: #799FDC;
+    border: none;
+    outline: none;
+}
+
+/*common*/
+.dash-button:focus {
+    color: #fff;
+    background-color: #799FDC !important;
+    border: none;
+    outline: none;
+}
+
+.dash-button:active {
+    color: #fff;
+    background-color: #799FDC !important;
+    border: none;
+    outline: none;
+}
+
+.dash-button:hover {
+    color: #fff;
+    background-color: #3671CF !important;
+    border: none;
+    outline: none;
+}
+
+.dash-button {
+    border-radius: 10px;
+    padding: 0px 8px;
+    line-height: 1.42;
+    color: #fff;
+    background-color: #799FDC;
+    border: none;
+    outline: none;
+}
+
+/*popover*/
+
+.dropdown-menu {
+    border: 0px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.popover {
+    border: none;
+}

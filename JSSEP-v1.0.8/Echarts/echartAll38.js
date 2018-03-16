@@ -3,6 +3,7 @@ var myChart22 = echarts.init(document.getElementById('main22'));
 var myChart23 = echarts.init(document.getElementById('main23'));
 var myChart24 = echarts.init(document.getElementById('main24'));
 var myChart32 = echarts.init(document.getElementById('main32'));
+var myChartAddCPU = echarts.init(document.getElementById('mainAddCPU'));
 
 // 'show' or 'not show' the legend. 是否展示legend
 var legendMode = true;
@@ -40,12 +41,13 @@ $("#dash-count-top20").click(function () {
 // end21
 
 // main22 - realtime, date, data
-var main22Mod = 1;
+var main22Mod = 2;
 
 var base22 = +new Date(2018, 1, 28, 8, 0, 0);
 var quaMinute22 = 5 * 60 * 1000;
 var date22 = [];
 var data22 = [];
+var dataA22 = [];
 var myDate22 = new Date(base22);
 var Minute22 = 60;
 var nowRe22 = new RegExp("a");
@@ -56,14 +58,17 @@ var nowRe22 = /\d+:\d+/;
 function addData22(shift) {
     now22 = myDate22.toTimeString().match(nowRe22);
     nowNum22 = (Math.random() - 0.03) * 925 + (Math.random() + 0.8) * 275 + (Math.random() - 0.58) * 480 + (Math.random() + 0.36) * 52;
+    nowNumA22 = (Math.random() - 0.03) * 105 + (Math.random() + 0.8) * 26 + (Math.random() - 0.58) * 49 + (Math.random() + 0.36) * 5;
     //nowNumStr22 = nowNum22 + "ss"; // 转换成String类型，添加单位，不适用于echarts。
 
     date22.push(now22);
     data22.push(nowNum22);
+    dataA22.push(nowNumA22);
     if (shift) {
         //console.log(data22);
         date22.shift();
         data22.shift();
+        dataA22.shift();
     }
     myDate22 = new Date(+new Date(myDate22) + quaMinute22);
 }
@@ -341,32 +346,47 @@ var option21 = {
 
 var option22 = {
     tooltip: {
-        show: true
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross'
+        }
     },
     xAxis: {
         type: 'category',
         boundaryGap: false,
         data: date22
     },
-    yAxis: {
+    yAxis: [{
         type: 'value',
+        name: '交换流量',
+        position: 'left',
         axisLabel: {
-            formatter: '{value} '
+            formatter: '{value} Mb'
         },
         axisPointer: {
             snap: true
         }
-    },
-    color: ['#89CA94'],
+    }, {
+        type: 'value',
+        name: '交换次数',
+        position: 'right',
+        axisLabel: {
+            formatter: '{value} 次'
+        },
+        axisPointer: {
+            snap: true
+        }
+    }],
+    color: ['#89CA94', '#5BB0F0'],
     grid: {
         left: '4%',
-        right: '5%',
-        top: '10%',
-        bottom: '5%',
+        right: '1%',
+        top: '15%',
+        bottom: '3%',
         containLabel: true
     },
     series: [{
-        name: '交换量',
+        name: '交换流量',
         type: 'line',
         smooth: true,
         data: data22,
@@ -375,6 +395,12 @@ var option22 = {
                 color: '#BEE1C0'
             }
         }
+            }, {
+        name: '交换次数',
+        type: 'bar',
+        yAxisIndex: 1,
+        data: dataA22,
+        barCategoryGap: '48%',
             }]
 };
 
@@ -646,11 +672,42 @@ var option32 = {
         }]
 };
 
+var optionAddCPU = {
+    tooltip: {
+        formatter: "{a} <br/>{b} : {c}%"
+    },
+
+    series: [
+        {
+            name: 'CPU使用率',
+            type: 'gauge',
+            radius: 100,
+            pointer: {
+                width: 5
+            },
+            axisLine: { // 坐标轴线  
+                lineStyle: { // 属性lineStyle控制线条样式  
+                    color: [[0.2, '#228b22'], [0.8, '#48b'], [1, '#ff4500']],
+                    width: 8
+                }
+            },
+            detail: {
+                formatter: '{value}%'
+            },
+            data: [{
+                value: 50,
+                name: 'CPU'
+            }]
+        }
+    ]
+}
+
 myChart21.setOption(option21);
 myChart22.setOption(option22);
 myChart23.setOption(option23);
 myChart24.setOption(option24);
 myChart32.setOption(option32);
+myChartAddCPU.setOption(optionAddCPU);
 
 setTimeout(function () {
     window.onresize = function () {
@@ -659,6 +716,7 @@ setTimeout(function () {
         myChart23.resize();
         myChart24.resize();
         myChart32.resize();
+        myChartAddCPU.resize();
     }
 }, 200);
 

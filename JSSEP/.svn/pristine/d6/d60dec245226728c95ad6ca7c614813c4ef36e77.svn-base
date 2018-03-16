@@ -1,0 +1,11 @@
+.resourceChoose{
+	width: 60%;
+	height: 600px;
+	border: 2px solid red;
+	float:right;
+	margin-top: -562px;
+	margin-right: -60%;
+}
+.tree-input{cursor:pointer;}
+.menuContent{display:none; position: fixed;background: white;z-index: 100;-webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	border: 1px solid #ccc;border: 1px solid rgba(0,0,0,.15);padding:10px;max-height:300px;overflow-y:auto;}

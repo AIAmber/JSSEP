@@ -1,0 +1,13 @@
+#newExchangeNodeForm label{font-weight:normal;}
+#newExchangeNodeForm .form-group .form-control{height: 30px;}
+.form-group{margin-bottom: 10px;} 
+#accessTime,#orgName{cursor:pointer;}
+#newExchangeNodeForm textarea{height: auto!important;}
+.hrtitle span{font-size: 18px;}
+.choose-dialog .modal-dialog{margin-top: 3%!important;width: 700px;} 
+.modal-header{padding:10px!important;}
+.form-control-feedback{height: 30px;line-height: 30px;}
+.col-sm-1 {width: 14.333333333333332%!important;}
+.col-sm-4 { width: 33.33333333333333%!important;}
+.col-sm-9 { width: 80.99999999999999%!important;}
+.submit-btn{margin-top: 2%;}
